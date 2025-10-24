@@ -1,0 +1,57 @@
+﻿.dialog-container {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.dialog-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.dialog-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    z-index: 1001;
+    min-width: 300px;
+}
+
+.dialog-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.success .dialog-content {
+    border-left: 6px solid green;
+}
+
+.error .dialog-content {
+    border-left: 6px solid red;
+}
+
+.warning .dialog-content {
+    border-left: 6px solid orange;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-secondary {
+    background: #e5e7eb;
+}
